@@ -4,7 +4,10 @@
     <div class="lista">
       <h4 class="title-list">Lista de Compras</h4>
       <div class="" *ngFor="let item of listaDeCompra">
-        <app-item [item]="item"></app-item>
+        <app-item
+          [item]="item"
+          (emitindoItemParaEditar)="editarItem($event)"
+        ></app-item>
       </div>
     </div>
   </div>
