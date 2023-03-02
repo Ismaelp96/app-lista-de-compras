@@ -29,7 +29,7 @@ export class ListaDeCompraService {
   addItemNaLista(nomeDoItem: string) {
     const item = this.criarItem(nomeDoItem);
     this.listaDeCompra.push(item);
-    this.attLocalStorage();
+    // this.attLocalStorage();
   }
 
   editarItemLista(itemAntigo: Item, nomeEditadoItem: string) {
@@ -42,7 +42,7 @@ export class ListaDeCompraService {
 
     const id = itemAntigo.id;
     this.listaDeCompra.splice(Number(id) - 1, 1, itemEditado);
-    this.attLocalStorage();
+    // this.attLocalStorage();
   }
 
   attLocalStorage() {
